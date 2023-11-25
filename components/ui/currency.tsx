@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
 
 const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -23,7 +23,7 @@ const Currency: React.FC<CurrencyProps> = ({
     if (!isMounted) return null
 
   return (
-    <div className="font-semibold">
+    <div className='font-semibold'>
         {formatter.format(Number(value))}
     </div>
   )

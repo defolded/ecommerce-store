@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { forwardRef } from "react"
+import { cn } from '@/lib/utils'
+import { forwardRef } from 'react'
 
 export interface ButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
@@ -39,9 +39,9 @@ export interface ButtonProps
           >
             {children}
           </button>
-        );
-      });
+        )
+      })
       
-      Button.displayName = "Button";
+      Button.displayName = 'Button'
       
-      export default Button;
+      export default Button

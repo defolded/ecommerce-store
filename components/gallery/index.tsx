@@ -2,8 +2,8 @@
 
 import { Image as ImageType } from '@/types'
 import { Tab } from '@headlessui/react'
-import GalleryTab from './gallery-tab'
 import Image from 'next/image'
+import GalleryTab from './gallery-tab'
 
 interface GalleryProps {
     images: ImageType[]

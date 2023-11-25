@@ -1,9 +1,9 @@
 'use client'
 
-import Button from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { Color, Size } from "@/types"
-import { useRouter, useSearchParams } from "next/navigation"
+import Button from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import { Color, Size } from '@/types'
+import { useRouter, useSearchParams } from 'next/navigation'
 import qs from 'query-string'
 
 interface FilterProps {
@@ -43,14 +43,14 @@ const Filter: React.FC<FilterProps> = ({
     }
 
   return (
-    <div className="mb-8">
-        <h3 className="text-lg font-semibold">
+    <div className='mb-8'>
+        <h3 className='text-lg font-semibold'>
             {name}
         </h3>
-        <hr className="my-4"/>
-        <div className="flex flex-wrap gap-2">
+        <hr className='my-4'/>
+        <div className='flex flex-wrap gap-2'>
             {data.map((i) => (
-                <div className="flex items-center" key={i.id}>
+                <div className='flex items-center' key={i.id}>
                     <Button
                         className={cn('rounded-md text-sm text-gray-800 p-2 bg-white border border-gray-300',
                         selectedValue === i.id && 'bg-black text-white'

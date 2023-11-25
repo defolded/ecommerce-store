@@ -1,4 +1,4 @@
-import { Size } from "@/types"
+import { Size } from '@/types'
 
 const URL = `${process.env.NEXT_PUBLIC_URL}/sizes`
 

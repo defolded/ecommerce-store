@@ -1,13 +1,13 @@
-import getCategory from "@/actions/get-category"
-import getColors from "@/actions/get-colors"
-import getProducts from "@/actions/get-products"
-import getSizes from "@/actions/get-sizes"
-import Billboard from "@/components/billboard"
-import Container from "@/components/ui/container"
-import NoResults from "@/components/ui/no-results"
-import ProductCard from "@/components/ui/product-card"
-import Filter from "./components/filter"
-import MobileFilters from "./components/mobile-filter"
+import getCategory from '@/actions/get-category'
+import getColors from '@/actions/get-colors'
+import getProducts from '@/actions/get-products'
+import getSizes from '@/actions/get-sizes'
+import Billboard from '@/components/billboard'
+import Container from '@/components/ui/container'
+import NoResults from '@/components/ui/no-results'
+import ProductCard from '@/components/ui/product-card'
+import Filter from './components/filter'
+import MobileFilters from './components/mobile-filter'
 
 
 interface CategoryPageProps {
@@ -35,15 +35,15 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
     const category = await getCategory(params.categoryId)
 
   return (
-    <div className="bg-white">
+    <div className='bg-white'>
         <Container>
             <Billboard
                 data={category.billboard}
             />
-            <div className="px-4 sm:px-6 lg:px-8 pb-24">
-                <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
+            <div className='px-4 sm:px-6 lg:px-8 pb-24'>
+                <div className='lg:grid lg:grid-cols-5 lg:gap-x-8'>
                     <MobileFilters sizes={sizes} colors={colors} />
-                    <div className="hidden lg:block">
+                    <div className='hidden lg:block'>
                         <Filter
                             valueKey='sizeId'
                             name='Sizes'
@@ -55,9 +55,9 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
                             data={colors}
                         />
                     BM</div>
-                    <div className="mt-6 lg:col-span-4 lg:mt-0">
+                    <div className='mt-6 lg:col-span-4 lg:mt-0'>
                         {prodcuts.length === 0 && <NoResults />}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
                             {prodcuts.map((i) => (
                                 <ProductCard 
                                     key={i.id}
