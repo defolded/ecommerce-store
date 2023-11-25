@@ -9,6 +9,7 @@ import ProductCard from '@/components/ui/product-card'
 import Filter from './components/filter'
 import MobileFilters from './components/mobile-filter'
 
+export const revalidate = 0
 
 interface CategoryPageProps {
     params: {
@@ -54,7 +55,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
                             name='Colors'
                             data={colors}
                         />
-                    BM</div>
+                    </div>
                     <div className='mt-6 lg:col-span-4 lg:mt-0'>
                         {prodcuts.length === 0 && <NoResults />}
                         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
