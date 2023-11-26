@@ -13,7 +13,7 @@ This is a front-end store for MyStore. You can find the admin dashboard in [this
 ## Run locally
 Clone this repository to your device 
 ```
-git clone https://github.com/defolded/ecommerce-admin.git
+git clone https://github.com/defolded/ecommerce-store.git
 ```
 Note: Make sure you have [Node.js](https://nodejs.org/en/) and [GitHub CLI](https://cli.github.com) installed on your machine.
 
